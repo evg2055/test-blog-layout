@@ -25,6 +25,7 @@ main {
 .card2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     background: white;
     margin: 10px;
     padding: 20px;
@@ -45,6 +46,12 @@ main {
     width: 50%;
     border-radius: 10px;
     align-self: center;
+}
+img {
+    width: 80%;
+    border-radius: 10px;
+    align-self: center;
+
 }
 .leftcolumn {
     width: 70%;
