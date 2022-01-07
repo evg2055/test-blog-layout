@@ -2,33 +2,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-header {
+.header {
     text-align: center;
 }
-h2 {
+.h2 {
     text-transform: capitalize;
 }
-h1 {
+.h1 {
     font-size: 68px;
-}
-h3 {
-    font-size: 48px;
-}
-h1, h3 {
     margin: 10px 0px;
 }
-article {
+.h3-green, .h3-red {
+    font-size: 48px;
+    margin: 10px 0px;
+}
+.h3-green {
+    color: green;
+}
+.h3-red {
+    color: red;
+}
+.art-top, .art-middle, .art-bottom {
     display: flex;
     flex-wrap: wrap;
     margin: 64px;
     padding: 20px;
 }
-section {
-    display: flex;
-    margin: 10px;
-    flex-direction: column;
+.art-middle {
+    background: rgb(245, 245, 245); margin: 0px; padding: 30px 68px;
 }
-a {
+.a-green {
     align-self: center;
     text-decoration: none;
     color: white;
@@ -36,6 +39,20 @@ a {
     font-size: 16px;
     cursor: pointer;
     background-color: #04AA6D;
+}
+.a-red {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+}
+.l1, .l2, .r1, .r2 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
 }
 .l1 {
     width: 65%;
@@ -49,21 +66,20 @@ a {
 .r2 {
     width: 65%;
 }
-span {
+.span-36 {
     font-size: 36px;
+}
+.span-40 {
+    font-size: 40px;
 }
 @media screen and (max-width: 1000px) {
     .l1, .l2, .r1, .r2 {
         width: 100%;
-    }
-    img {
-        width: 50%;
-    }
-    section {
         align-items: center;
         margin: 20px;
         text-align: center;
     }
-    
-    
+    .img {
+        width: 50%;
+    }
 }
