@@ -4,7 +4,11 @@ body {
     background: #cfcccc;
     margin: 20px;
 }
-h1 {
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.h1 {
     background: white;
     font-size: 60px;
     padding: 50px;
@@ -12,9 +16,8 @@ h1 {
     margin: 10px; 
     border-radius: 20px;
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
+.h2 {
+    text-transform: uppercase;
 }
 .card {
     background: white;
@@ -47,17 +50,19 @@ main {
     border-radius: 10px;
     align-self: center;
 }
-img {
+.img-leftcol {
     width: 80%;
     border-radius: 10px;
     align-self: center;
-
+    width: 30%;
+}
+.img-rightcol {
+    width: 80%;
+    border-radius: 10px;
+    align-self: center;
 }
 .leftcolumn {
     width: 70%;
-}
-h2 {
-    text-transform: uppercase;
 }
 .rightcolumn {
     width: 30%;
