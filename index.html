@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Blog Layout</title>
 </head>
-<body>
+<body class="page">
     <header>
-        <h1 class="h1">Russian Ivan's blog</h1></header>
-    <main>
-        <article class="leftcolumn">
-            <section class="card1">
-                <h2 class="h2">title heading</h2>
+        <h1 class="page__header">Russian Ivan's blog</h1></header>
+    <main class="main">
+        <article class="content">
+            <section class="card-1">
+                <h2 class="content__header">title heading</h2>
                 <p>Title description, Dec 7, 2017</p>
-                <img class="img-leftcol" src="images/img_app.jpg" alt="tablet" >
+                <img class="content__img" src="./images/img_app.jpg" alt="tablet" >
                 <p>Some txt</p>
                 <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it?
                     Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that
@@ -23,9 +23,9 @@
                     store, because you're here shopping for an infant named Jeb.</p>
             </section>
             <section class="card">
-                <h2 class="h2">title heading</h2>
+                <h2 class="content__header">title heading</h2>
                 <p>Title description, Dec 2, 2017</p>
-                <div class="fake__img">image</div>
+                <div class="fake-img">image</div>
                 <p>Some txt</p>
                 <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it?
                     Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that
@@ -33,25 +33,23 @@
                     store, because you're here shopping for an infant named Jeb.</p>
             </section>
         </article>
-        <article class="rightcolumn">
-            <section class="card2">
+        <article class="sidebar">
+            <section class="card-2">
                 <h3>About Me</h3>
-                <img class="img-rightcol" src="images/app5.jpg" alt="phone">
+                <img class="sidebar__img" src="./images/app5.jpg" alt="phone">
                 <p>Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
             </section>
-            <section class="card2">
+            <section class="card-2">
                 <h3>Popular Post</h3>
-                <div class="fake__img2">image</div>
-                <div class="fake__img2">image</div>
-                <div class="fake__img2">image</div>
+                <div class="sidebar__fake-img">image</div>
+                <div class="sidebar__fake-img">image</div>
+                <div class="sidebar__fake-img">image</div>
             </section>
             <section class="card">
                 <h3>Follow Me</h3>
-                <a href="https://i.ytimg.com/vi/CQUSPYss41c/maxresdefault.jpg" class="chicken">fucking fried chicken</a>
+                <a class="sidebar__a" href="https://i.ytimg.com/vi/CQUSPYss41c/maxresdefault.jpg" class="chicken">fucking fried chicken</a>
             </section>
         </article>
     </main>
-    <footer> basement</footer>
+    <footer class="footer"> basement</footer>
     
-</body>
-</html>

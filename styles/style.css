@@ -1,14 +1,17 @@
-body {
+* {
+    box-sizing: border-box;
+}
+.page {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background: #cfcccc;
     margin: 20px;
 }
-main {
+.main {
     display: flex;
     flex-wrap: wrap;
 }
-.h1 {
+.page__header {
     background: white;
     font-size: 60px;
     padding: 50px;
@@ -16,7 +19,7 @@ main {
     margin: 10px; 
     border-radius: 20px;
 }
-.h2 {
+.content__header {
     text-transform: uppercase;
 }
 .card {
@@ -27,7 +30,7 @@ main {
     padding: 20px;
     border-radius: 20px;
 }
-.card1 {
+.card-1, .card-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,16 +39,7 @@ main {
     padding: 20px;
     border-radius: 20px;
 }
-.card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: white;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 20px;
-}
-.fake__img {
+.fake-img {
     height: 100px;
     background: grey;
     padding: 10px;
@@ -53,8 +47,8 @@ main {
     width: 90%;
     border-radius: 10px;
 }
-.fake__img2 {
-    height: 30px;
+.sidebar__fake-img {
+    height: 60px;
     background: grey;
     padding: 10px;
     margin: 10px 0px;
@@ -62,23 +56,22 @@ main {
     border-radius: 10px;
     align-self: center;
 }
-.img-leftcol {
-    width: 80%;
+.content__img {
     border-radius: 10px;
     width: 30%;
 }
-.img-rightcol {
+.sidebar__img {
     width: 80%;
     border-radius: 10px;
     align-self: center;
 }
-.leftcolumn {
+.content {
     width: 70%;
 }
-.rightcolumn {
+.sidebar {
     width: 30%;
 }
-footer {
+.footer {
     background: rgb(156, 186, 243);
     height: auto;
     text-align: center;
@@ -89,17 +82,17 @@ footer {
     text-transform: uppercase;
     font-weight: bolder;   
 }
-.chicken {
+.sidebar__a {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
 }
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+    .content, .sidebar {   
       width: 100%;
       padding: 0;
     }
-    .card, .card1, .card2 {
+    .card, .card-1, .card-2 {
         align-items: center;
     }
     
