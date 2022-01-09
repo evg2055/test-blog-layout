@@ -7,6 +7,31 @@
     background: #cfcccc;
     margin: 20px;
 }
+.navbar__main-line {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    background: white;
+    border-radius: 10px;
+}
+.navbar__link {
+    display: block;
+    position: sticky;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    padding: 14px 16px;
+}
+.navbar__link:hover {
+    background: grey;
+    color: white;
+    
+}
 .main {
     display: flex;
     flex-wrap: wrap;
