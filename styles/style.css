@@ -7,15 +7,19 @@
     background: #cfcccc;
     margin: 20px;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+}
 .navbar__main-line {
     display: flex;
-    position: sticky;
     justify-content: space-around;
     list-style-type: none;
     margin: 10px;
     padding: 0;
     background: white;
     border-radius: 10px;
+    height: 100%;
 }
 .navbar__link {
     display: block;
