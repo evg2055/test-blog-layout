@@ -9,6 +9,7 @@
 }
 .navbar__main-line {
     display: flex;
+    position: sticky;
     justify-content: space-around;
     list-style-type: none;
     margin: 10px;
@@ -18,7 +19,6 @@
 }
 .navbar__link {
     display: block;
-    position: sticky;
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
