@@ -1,3 +1,8 @@
+:root {
+    --size-0: 0px;
+    --size-10: 10px;
+    --size-20: 20px;
+}
 * {
     box-sizing: border-box;
 }
@@ -5,21 +10,21 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background: #cfcccc;
-    margin: 20px;
+    margin: var(--size-20)
 }
 .navbar {
     position: sticky;
     top: 0;
-    margin: 0px 10px;
+    margin: var(--size-0) var(--size-10);
 }
 .navbar__main-line {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin: 10px;
+    margin: var(--size-10);
     padding: 0;
     background: white;
-    border-radius: 10px;
+    border-radius: var(--size-10);
     height: 100%;
 }
 .navbar__link {
@@ -28,7 +33,7 @@
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: var(--size-20);
     color: black;
     padding: 14px 16px;
 }
@@ -46,8 +51,8 @@
     font-size: 60px;
     padding: 50px;
     text-align: center;
-    margin: 10px 10px; 
-    border-radius: 20px;
+    margin: var(--size-10) var(--size-10); 
+    border-radius: var(--size-20);
 }
 .content__header {
     text-transform: uppercase;
@@ -56,43 +61,43 @@
     display: flex;
     flex-direction: column;
     background: white;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: var(--size-10);
+    padding: var(--size-20);
+    border-radius: var(--size-20);
 }
 .card-1, .card-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: white;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: var(--size-10);
+    padding: var(--size-20);
+    border-radius: var(--size-20);
 }
 .fake-img {
     height: 100px;
     background: grey;
-    padding: 10px;
-    margin: 10px 0px;
+    padding: var(--size-10);
+    margin: var(--size-10) var(--size-0);
     width: 90%;
-    border-radius: 10px;
+    border-radius: var(--size-10);
 }
 .sidebar__fake-img {
     height: 60px;
     background: grey;
-    padding: 10px;
-    margin: 10px 0px;
+    padding: var(--size-10);
+    margin: var(--size-10) var(--size-0);
     width: 50%;
-    border-radius: 10px;
+    border-radius: var(--size-10);
     align-self: center;
 }
 .content__img {
-    border-radius: 10px;
+    border-radius: var(--size-10);
     width: 30%;
 }
 .sidebar__img {
     width: 80%;
-    border-radius: 10px;
+    border-radius: var(--size-10);
     align-self: center;
 }
 .content {
@@ -107,8 +112,8 @@
     text-align: center;
     padding: 50px;
     font-size: 40px;
-    margin: 0px 10px;
-    border-radius: 20px;
+    margin: var(--size-0) var(--size-10);
+    border-radius: var(--size-20);
     text-transform: uppercase;
     font-weight: bolder;   
 }
